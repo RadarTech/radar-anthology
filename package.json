@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Radar's internal configuration using Anthology.scss",
   "main": "main.scss",
-  "scripts": {
-    "build": "node-sass --output ./dist ./radar-anthology.scss"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RadarRelay/radar-anthology.git"
@@ -15,8 +12,7 @@
     "url": "https://github.com/RadarRelay/radar-anthology/issues"
   },
   "homepage": "https://github.com/RadarRelay/radar-anthology#readme",
-  "dependencies": {
-    "anthology.scss": "github:RadarRelay/anthology.scss",
-    "bulma": "~0.7.2"
+  "peerDependencies": {
+    "anthology.scss": "github:RadarRelay/anthology.scss"
   }
 }
