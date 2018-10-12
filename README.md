@@ -1,1 +1,1 @@
-TODO: Write a good README
+Radar's internal configuration using Anthology.scss
