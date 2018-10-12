@@ -1,0 +1,19 @@
+@import './align';
+@import './border';
+@import './color';
+@import './display';
+@import './flex';
+@import './justify';
+@import './opacity';
+@import './overflow';
+@import './pointer';
+@import './position';
+@import './sizing';
+@import './spacing';
+@import './typography';
+@import './visibility';
+@import './z-index';
+
+// Emit CSS for all imports above
+@include -a-emit(true);
+@include -a-emit-responsive(true);

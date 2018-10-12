@@ -1,0 +1,33 @@
+$height-width-adjectives: (
+  '100vh': 100vh,
+  '50vh': 50vh,
+  '100vw': 100vw,
+  '50vw': 50vw,
+);
+
+@for $i from 0 through 100 {
+  @if $i % 5 == 0 {
+    $height-width-adjectives: __anth-map-set($height-width-adjectives, $i, $i * 1%);
+  }
+}
+
+@include -a-define('height', height, $height-width-adjectives);
+@include -a-define('min-height', min-height, $height-width-adjectives);
+@include -a-define('max-height', max-height, $height-width-adjectives);
+
+@include -a-define('width', width, $height-width-adjectives);
+@include -a-define('min-width', min-width, $height-width-adjectives);
+@include -a-define('max-width', max-width, $height-width-adjectives);
+
+$height-width-adjectives: (
+  '1rem': 1rem,
+  'sm': px-to-rem(10px),
+  'md': px-to-rem(12px),
+  'lg': px-to-rem(16px),
+  'xl': px-to-rem(22px),
+  'xxl': px-to-rem(26px),
+);
+
+@include -a-define('height', height, $height-width-adjectives);
+@include -a-define('width', width, $height-width-adjectives);
+

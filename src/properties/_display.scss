@@ -1,0 +1,11 @@
+$display-adjectives: (
+  'inline': inline,
+  'block': block,
+  'inline-block': inline-block,
+  'flex': flex,
+  'inline-flex': inline-flex,
+  'grid': grid,
+  'inline-grid': inline-grid,
+);
+
+@include -a-define('display', display, $display-adjectives);

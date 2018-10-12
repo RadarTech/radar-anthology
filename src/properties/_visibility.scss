@@ -1,0 +1,6 @@
+$visibility-adjectives: (
+  'visible': visible,
+  'hidden': hidden,
+);
+
+@include -a-define('visibility', visibility, $visibility-adjectives);

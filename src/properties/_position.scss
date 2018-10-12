@@ -1,0 +1,7 @@
+$position-adjectives: (
+  'relative': relative,
+  'absolute': absolute,
+  'fixed': fixed,
+);
+
+@include -a-define('position', position, $position-adjectives);

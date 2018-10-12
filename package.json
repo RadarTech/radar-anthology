@@ -1,0 +1,21 @@
+{
+  "name": "@radarrelay/radar-anthology",
+  "version": "0.1.0",
+  "description": "Radar's internal configuration using Anthology.scss",
+  "main": "main.scss",
+  "scripts": {
+    "start": "node-sass --output ./example-output ./radar-anthology.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadarRelay/radar-anthology.git"
+  },
+  "author": "Ian Smith <ian.smith@radarrelay.com>",
+  "bugs": {
+    "url": "https://github.com/RadarRelay/radar-anthology/issues"
+  },
+  "homepage": "https://github.com/RadarRelay/radar-anthology#readme",
+  "dependencies": {
+    "anthology.scss": "github:RadarRelay/anthology.scss"
+  }
+}
