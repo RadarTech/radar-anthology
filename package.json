@@ -1,6 +1,6 @@
 {
   "name": "@radarrelay/radar-anthology",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Radar's internal configuration using Anthology.scss",
   "main": "main.scss",
   "repository": {
@@ -13,6 +13,6 @@
   },
   "homepage": "https://github.com/RadarRelay/radar-anthology#readme",
   "peerDependencies": {
-    "anthology.scss": "github:RadarRelay/anthology.scss"
+    "anthology.scss": "0.1.0"
   }
 }
