@@ -7,6 +7,6 @@ $align-adjectives: (
   'bottom': flex-end,
 );
 
-@include -a-define('align-self', align-self, $align-adjectives);
-@include -a-define('align-items', align-items, $align-adjectives);
-@include -a-define('align-content', align-content, $align-adjectives);
+@include a(define, 'align-self', align-self, $align-adjectives);
+@include a(define, 'align-items', align-items, $align-adjectives);
+@include a(define, 'align-content', align-content, $align-adjectives);

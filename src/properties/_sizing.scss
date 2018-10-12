@@ -11,13 +11,13 @@ $height-width-adjectives: (
   }
 }
 
-@include -a-define('height', height, $height-width-adjectives);
-@include -a-define('min-height', min-height, $height-width-adjectives);
-@include -a-define('max-height', max-height, $height-width-adjectives);
+@include a(define, 'height', height, $height-width-adjectives);
+@include a(define, 'min-height', min-height, $height-width-adjectives);
+@include a(define, 'max-height', max-height, $height-width-adjectives);
 
-@include -a-define('width', width, $height-width-adjectives);
-@include -a-define('min-width', min-width, $height-width-adjectives);
-@include -a-define('max-width', max-width, $height-width-adjectives);
+@include a(define, 'width', width, $height-width-adjectives);
+@include a(define, 'min-width', min-width, $height-width-adjectives);
+@include a(define, 'max-width', max-width, $height-width-adjectives);
 
 $height-width-adjectives: (
   '1rem': 1rem,
@@ -28,6 +28,6 @@ $height-width-adjectives: (
   'xxl': px-to-rem(26px),
 );
 
-@include -a-define('height', height, $height-width-adjectives);
-@include -a-define('width', width, $height-width-adjectives);
+@include a(define, 'height', height, $height-width-adjectives);
+@include a(define, 'width', width, $height-width-adjectives);
 

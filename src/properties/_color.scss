@@ -30,13 +30,13 @@ $color-adjectives: (
 
 $-a-define-options: ('themes': 'night', 'pseudos': ':hover');
 
-@include -a-define('color', color, $color-adjectives, $-a-define-options);
-@include -a-define('background-color', background-color, $color-adjectives, $-a-define-options);
+@include a(define, 'color', color, $color-adjectives, $-a-define-options);
+@include a(define, 'background-color', background-color, $color-adjectives, $-a-define-options);
 
-@include -a-define('border-color', border-color, $color-adjectives, $-a-define-options);
-@include -a-define('border-left-color', border-left-color, $color-adjectives, $-a-define-options);
-@include -a-define('border-top-color', border-top-color, $color-adjectives, $-a-define-options);
-@include -a-define('border-right-color', border-right-color, $color-adjectives, $-a-define-options);
-@include -a-define('border-bottom-color', border-bottom-color, $color-adjectives, $-a-define-options);
+@include a(define, 'border-color', border-color, $color-adjectives, $-a-define-options);
+@include a(define, 'border-left-color', border-left-color, $color-adjectives, $-a-define-options);
+@include a(define, 'border-top-color', border-top-color, $color-adjectives, $-a-define-options);
+@include a(define, 'border-right-color', border-right-color, $color-adjectives, $-a-define-options);
+@include a(define, 'border-bottom-color', border-bottom-color, $color-adjectives, $-a-define-options);
 
-@include -a-define('fill', fill, $color-adjectives, $-a-define-options);
+@include a(define, 'fill', fill, $color-adjectives, $-a-define-options);

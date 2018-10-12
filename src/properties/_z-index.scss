@@ -16,5 +16,5 @@ $z-index-adjectives: (
   }
 }
 
-@include -a-define('z-index', z-index, $z-index-adjectives);
+@include a(define, 'z-index', z-index, $z-index-adjectives);
 

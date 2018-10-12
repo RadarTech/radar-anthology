@@ -4,4 +4,4 @@ $position-adjectives: (
   'fixed': fixed,
 );
 
-@include -a-define('position', position, $position-adjectives);
+@include a(define, 'position', position, $position-adjectives);

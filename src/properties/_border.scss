@@ -5,18 +5,18 @@ $border-radius-adjectives: (
   'round': 50%,
   'pill': 1000px
 );
-@include -a-define('border-radius', border-radius, $border-radius-adjectives);
-@include -a-define('border-top-left-radius', border-top-left-radius, $border-radius-adjectives);
-@include -a-define('border-top-right-radius', border-top-right-radius, $border-radius-adjectives);
-@include -a-define('border-bottom-left-radius', border-bottom-left-radius, $border-radius-adjectives);
-@include -a-define('border-bottom-right-radius', border-bottom-right-radius, $border-radius-adjectives);
+@include a(define, 'border-radius', border-radius, $border-radius-adjectives);
+@include a(define, 'border-top-left-radius', border-top-left-radius, $border-radius-adjectives);
+@include a(define, 'border-top-right-radius', border-top-right-radius, $border-radius-adjectives);
+@include a(define, 'border-bottom-left-radius', border-bottom-left-radius, $border-radius-adjectives);
+@include a(define, 'border-bottom-right-radius', border-bottom-right-radius, $border-radius-adjectives);
 
 $border-width-adjectives: (
   'thin': 1px,
 );
-@include -a-define('border-width', border-width, $border-width-adjectives);
+@include a(define, 'border-width', border-width, $border-width-adjectives);
 
 $border-style-adjectives: (
   'solid': solid,
 );
-@include -a-define('border-style', border-style, $border-style-adjectives);
+@include a(define, 'border-style', border-style, $border-style-adjectives);

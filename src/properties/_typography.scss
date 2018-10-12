@@ -7,7 +7,7 @@ $font-size-adjectives: (
   'xl': px-to-rem(22px),
   'xxl': px-to-rem(26px),
 );
-@include -a-define('font-size', font-size, $font-size-adjectives);
+@include a(define, 'font-size', font-size, $font-size-adjectives);
 
 // --- line-height --- //
 $line-height-adjectives: (
@@ -15,7 +15,7 @@ $line-height-adjectives: (
   '1': 1,
   'sm': 1.3,
 );
-@include -a-define('line-height', line-height, $line-height-adjectives);
+@include a(define, 'line-height', line-height, $line-height-adjectives);
 
 // --- vertical-align --- //
 $vertical-align-adjectives: (
@@ -23,19 +23,19 @@ $vertical-align-adjectives: (
   'middle': middle,
   'bottom': bottom,
 );
-@include -a-define('vertical-align', vertical-align, $vertical-align-adjectives);
+@include a(define, 'vertical-align', vertical-align, $vertical-align-adjectives);
 
 // --- text-transform --- //
 $text-transform-adjectives: (
   'uppercase': uppercase,
 );
-@include -a-define('text-transform', text-transform, $text-transform-adjectives);
+@include a(define, 'text-transform', text-transform, $text-transform-adjectives);
 
 // --- text-decoration --- //
 $text-decoration-adjectives: (
   'underline': underline,
 );
-@include -a-define('text-decoration', text-decoration, $text-decoration-adjectives);
+@include a(define, 'text-decoration', text-decoration, $text-decoration-adjectives);
 
 // --- font-weight --- //
 $font-weight-adjectives: (
@@ -43,14 +43,14 @@ $font-weight-adjectives: (
   'regular': 500,
   'bold': 700,
 );
-@include -a-define('font-weight', font-weight, $font-weight-adjectives);
+@include a(define, 'font-weight', font-weight, $font-weight-adjectives);
 
 // --- font-weight --- //
 $font-stretch-adjectives: (
   'normal': normal,
   'condensed': condensed,
 );
-@include -a-define('font-stretch', font-stretch, $font-stretch-adjectives);
+@include a(define, 'font-stretch', font-stretch, $font-stretch-adjectives);
 
 // --- text-align --- //
 $text-align-adjectives: (
@@ -58,10 +58,10 @@ $text-align-adjectives: (
   'center': center,
   'right': right
 );
-@include -a-define('text-align', text-align, $text-align-adjectives);
+@include a(define, 'text-align', text-align, $text-align-adjectives);
 
 // --- white-space --- //
 $white-space-adjectives: (
   'nowrap': nowrap
 );
-@include -a-define('white-space', white-space, $white-space-adjectives);
+@include a(define, 'white-space', white-space, $white-space-adjectives);

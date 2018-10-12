@@ -5,16 +5,16 @@ $flex-adjectives: ();
   $flex-adjectives: map-merge($flex-adjectives, ($i: $i));
 }
 
-@include -a-define('flex', flex, $flex-adjectives);
-@include -a-define('flex-grow', flex-grow, $flex-adjectives);
-@include -a-define('flex-shrink', flex-shrink, $flex-adjectives);
+@include a(define, 'flex', flex, $flex-adjectives);
+@include a(define, 'flex-grow', flex-grow, $flex-adjectives);
+@include a(define, 'flex-shrink', flex-shrink, $flex-adjectives);
 
 // --- flex-direction --- //
 $flex-direction-adjectives: (
   'row': row,
   'column': column,
 );
-@include -a-define('flex-direction', flex-direction, $flex-direction-adjectives);
+@include a(define, 'flex-direction', flex-direction, $flex-direction-adjectives);
 
 // --- flex-basis --- //
 $flex-basis-adjectives: (
@@ -27,7 +27,7 @@ $flex-basis-adjectives: (
     $flex-basis-adjectives: map-merge($flex-basis-adjectives, ($i: $i * 1%));
   }
 }
-@include -a-define('flex-basis', flex-basis, $flex-basis-adjectives);
+@include a(define, 'flex-basis', flex-basis, $flex-basis-adjectives);
 
 // --- flex-wrap --- //
 $flex-wrap-adjectives: (
@@ -35,4 +35,4 @@ $flex-wrap-adjectives: (
   'nowrap': nowrap,
   'wrap-reverse': wrap-reverse
 );
-@include -a-define('flex-wrap', flex-wrap, $flex-wrap-adjectives);
+@include a(define, 'flex-wrap', flex-wrap, $flex-wrap-adjectives);
