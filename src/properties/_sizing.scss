@@ -7,7 +7,7 @@ $height-width-adjectives: (
 
 @for $i from 0 through 100 {
   @if $i % 5 == 0 {
-    $height-width-adjectives: __anth-map-set($height-width-adjectives, $i, $i * 1%);
+    $height-width-adjectives: a(map-set, $height-width-adjectives, $i, $i * 1%);
   }
 }
 

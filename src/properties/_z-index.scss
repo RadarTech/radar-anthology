@@ -5,14 +5,14 @@ $z-index-adjectives: (
 // Enter values for -1000, -900, -800, ..., -100
 @for $i from 1000 to 1 {
   @if $i % 100 == 0 {
-    $z-index-adjectives: __anth-map-set($z-index-adjectives, 'neg-#{$i}', $i);
+    $z-index-adjectives: a(map-set, $z-index-adjectives, 'neg-#{$i}', $i);
   }
 }
 
 // Enter values for 100, 200, 300, ..., 1000
 @for $i from 1 to 1001 {
   @if $i % 100 == 0 {
-    $z-index-adjectives: __anth-map-set($z-index-adjectives, $i, $i);
+    $z-index-adjectives: a(map-set, $z-index-adjectives, $i, $i);
   }
 }
 
