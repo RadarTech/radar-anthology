@@ -46,7 +46,7 @@ ansi-styles@^3.2.1:
 
 "anthology.scss@github:RadarRelay/anthology.scss":
   version "0.1.0"
-  resolved "git+ssh://git@github.com/RadarRelay/anthology.scss.git#9666cc52a14af61a1e63524fc9d4ebd10320f997"
+  resolved "git+ssh://git@github.com/RadarRelay/anthology.scss.git#98d7709439473688b979c0283f93453a598522f1"
   dependencies:
     chalk "~2.4.1"
     node-sass "~4.9.3"
