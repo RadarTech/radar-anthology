@@ -7,4 +7,5 @@
   'breakpoints': $breakpoints
 ));
 
+@import './node_modules/bulma/bulma.sass'; // TODO: eventually remove
 @import './src/properties/all';

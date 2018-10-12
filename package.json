@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/RadarRelay/radar-anthology#readme",
   "dependencies": {
-    "anthology.scss": "github:RadarRelay/anthology.scss"
+    "anthology.scss": "github:RadarRelay/anthology.scss",
+    "bulma": "~0.7.2"
   }
 }
