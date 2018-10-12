@@ -1,7 +1,8 @@
 /// Converts a pixel value to rem based on global `$rem-scale`.
 ///
 /// @param {Number} $px - The pixel value we are converting
-@function px-to-rem($px, $rem-scale: 100%) {
+@function px-to-rem($px) {
+  $rem-scale: 69%;
   $px-base: 16px * ($rem-scale / 100%);
   @if unitless($px) { $px: $px * 1px }
   @if unit($px) != 'px' {
