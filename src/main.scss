@@ -1,5 +1,5 @@
-@import './node_modules/anthology.scss/anthology.scss';
-@import './src/lib/all';
+@import '../node_modules/anthology.scss/anthology.scss';
+@import './lib/all';
 
 // Configure anthology
 
@@ -7,5 +7,5 @@
   'breakpoints': $breakpoints
 ));
 
-@import './node_modules/bulma/bulma.sass'; // TODO: eventually remove
-@import './src/properties/all';
+@import '../node_modules/bulma/bulma.sass'; // TODO: eventually remove
+@import './properties/all';
