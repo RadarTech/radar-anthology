@@ -13,6 +13,6 @@
   },
   "homepage": "https://github.com/RadarRelay/radar-anthology#readme",
   "peerDependencies": {
-    "anthology.scss": "0.1.0"
+    "anthology.scss": "0.1.3"
   }
 }
