@@ -11,6 +11,6 @@ $justify-adjectives: (
   'space-around': space-around,
 );
 
-@include a(define, 'justify-items', justify-items, $justify-adjectives);
-@include a(define, 'justify-self', justify-self, $justify-adjectives);
-@include a(define, 'justify-content', justify-content, $justify-adjectives);
+@include A(define, 'justify-items', justify-items, $justify-adjectives);
+@include A(define, 'justify-self', justify-self, $justify-adjectives);
+@include A(define, 'justify-content', justify-content, $justify-adjectives);

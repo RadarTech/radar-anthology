@@ -7,17 +7,17 @@ $height-width-adjectives: (
 
 @for $i from 0 through 100 {
   @if $i % 5 == 0 {
-    $height-width-adjectives: a(map-set, $height-width-adjectives, $i, $i * 1%);
+    $height-width-adjectives: A(map-set, $height-width-adjectives, $i, $i * 1%);
   }
 }
 
-@include a(define, 'height', height, $height-width-adjectives);
-@include a(define, 'min-height', min-height, $height-width-adjectives);
-@include a(define, 'max-height', max-height, $height-width-adjectives);
+@include A(define, 'height', height, $height-width-adjectives);
+@include A(define, 'min-height', min-height, $height-width-adjectives);
+@include A(define, 'max-height', max-height, $height-width-adjectives);
 
-@include a(define, 'width', width, $height-width-adjectives);
-@include a(define, 'min-width', min-width, $height-width-adjectives);
-@include a(define, 'max-width', max-width, $height-width-adjectives);
+@include A(define, 'width', width, $height-width-adjectives);
+@include A(define, 'min-width', min-width, $height-width-adjectives);
+@include A(define, 'max-width', max-width, $height-width-adjectives);
 
 $height-width-adjectives: (
   '1rem': 1rem,
@@ -28,6 +28,6 @@ $height-width-adjectives: (
   'xxl': px-to-rem(26px),
 );
 
-@include a(define, 'height', height, $height-width-adjectives);
-@include a(define, 'width', width, $height-width-adjectives);
+@include A(define, 'height', height, $height-width-adjectives);
+@include A(define, 'width', width, $height-width-adjectives);
 

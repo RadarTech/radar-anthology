@@ -8,4 +8,4 @@ $display-adjectives: (
   'inline-grid': inline-grid,
 );
 
-@include a(define, 'display', display, $display-adjectives);
+@include A(define, 'display', display, $display-adjectives);
