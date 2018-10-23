@@ -39,4 +39,4 @@ $color-options: ('themes': 'night', 'pseudos': (':hover', ':focus'));
 @include A(define, 'border-right-color', border-right-color, $color-adjectives, $color-options);
 @include A(define, 'border-bottom-color', border-bottom-color, $color-adjectives, $color-options);
 
-@include A(define, 'fill', fill, $color-adjectives, $-a-define-options);
+@include A(define, 'fill', fill, $color-adjectives, $color-options);
