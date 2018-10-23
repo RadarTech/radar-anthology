@@ -1,6 +1,7 @@
 $cursor-adjectives: (
   'default': default,
   'pointer': pointer,
+  'not-allowed': not-allowed,
 );
 @include A(define, 'cursor', cursor, $cursor-adjectives);
 
