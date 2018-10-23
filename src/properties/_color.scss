@@ -28,7 +28,7 @@ $color-adjectives: (
   'green-fg': $green-fg,
 );
 
-$color-options: ('themes': 'night', 'pseudos': (':hover', ':focus'));
+$color-options: ('themes': 'night', 'pseudos': (':hover', ':focus', ':active'));
 
 @include A(define, 'color', color, $color-adjectives, $color-options);
 @include A(define, 'background-color', background-color, $color-adjectives, $color-options);
