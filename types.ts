@@ -1,13 +1,13 @@
 // --- Standard Breakpoints ------------------------------------------------- //
 
-export enum RadarBreakpointNames {
+export enum RadarBreakpointName {
   Tablet = 'tablet',
   Desktop = 'desktop',
   Widescreen = 'widescreen',
   FullHD = 'fullhd',
 }
 
-export enum RadarBreakpointPxValues {
+export enum RadarBreakpointPxValue {
   Tablet = '768px',
   Desktop = '1140px',
   Widescreen = '1280px',
@@ -16,7 +16,7 @@ export enum RadarBreakpointPxValues {
 
 // --- Colors --------------------------------------------------------------- //
 
-export enum RadarBaseColorNames {
+export enum RadarBaseColorName {
   Light = 'light',
   Dark = 'dark',
   Orange = 'orange',
@@ -24,7 +24,7 @@ export enum RadarBaseColorNames {
   Green = 'green',
 }
 
-export enum RadarColorNames {
+export enum RadarColorName {
   Black = 'black',
   White = 'white',
 
@@ -54,7 +54,7 @@ export enum RadarColorNames {
   GreenFg = 'green-fg',
 }
 
-export enum RadarColorHexValues {
+export enum RadarColorHexValue {
   Black = '#000000',
   White = '#ffffff',
 
