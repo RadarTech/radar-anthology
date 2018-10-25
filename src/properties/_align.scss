@@ -5,6 +5,7 @@ $align-adjectives: (
   'top': flex-start,
   'middle': center,
   'bottom': flex-end,
+  'stretch': stretch,
 );
 
 @include A(define, 'align-self', align-self, $align-adjectives);
