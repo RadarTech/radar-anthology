@@ -28,7 +28,10 @@ $vertical-align-adjectives: (
 
 // --- text-transform --- //
 $text-transform-adjectives: (
+  'none': none,
+  'lowercase': lowercase,
   'uppercase': uppercase,
+  'capitalize': capitalize,
 );
 @include A(define, 'text-transform', text-transform, $text-transform-adjectives);
 
