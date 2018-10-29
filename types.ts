@@ -25,6 +25,8 @@ export enum RadarBaseColorName {
 }
 
 export enum RadarColorName {
+  Transparent = 'transparent',
+
   Black = 'black',
   White = 'white',
 
