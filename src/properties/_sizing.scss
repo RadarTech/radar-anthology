@@ -21,11 +21,9 @@ $height-width-adjectives: (
 
 $height-width-adjectives: (
   '1rem': 1rem,
-  'sm': px-to-rem(10px),
-  'md': px-to-rem(12px),
-  'lg': px-to-rem(16px),
-  'xl': px-to-rem(22px),
-  'xxl': px-to-rem(26px),
+  'icon-sm': px-to-rem(12px),
+  'icon-md': px-to-rem(16px),
+  'icon-lg': px-to-rem(24px),
 );
 
 @include A(define, 'height', height, $height-width-adjectives);
