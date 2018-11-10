@@ -23,7 +23,7 @@ $color-alpha-adjectives: (
 );
 @include A(define, 'color-alpha', --color-alpha, $color-alpha-adjectives, $color-options);
 @include A(define, 'background-color-alpha', --background-color-alpha, $color-alpha-adjectives, $color-options);
-@include A(define, 'border-color', --border-color-alpha, $color-alpha-adjectives, $color-options);
+@include A(define, 'border-color-alpha', --border-color-alpha, $color-alpha-adjectives, $color-options);
 @include A(define, 'fill-alpha', --fill-alpha, $color-alpha-adjectives, $color-options);
 @include A(define, 'stroke-alpha', --stroke-alpha, $color-alpha-adjectives, $color-options);
 
