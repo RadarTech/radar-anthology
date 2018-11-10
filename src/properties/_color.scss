@@ -1,44 +1,78 @@
-$color-adjectives: (
-  'transparent': transparent,
-
-  'black': $black,
-  'white': $white,
-
-  'light': $light,
-  'light-bg': $light-bg,
-  'light-mg': $light-mg,
-  'light-fg': $light-fg,
-
-  'dark': $dark,
-  'dark-bg': $dark-bg,
-  'dark-mg': $dark-mg,
-  'dark-fg': $dark-fg,
-
-  'orange': $orange,
-  'orange-bg': $orange-bg,
-  'orange-mg': $orange-mg,
-  'orange-fg': $orange-fg,
-
-  'red': $red,
-  'red-bg': $red-bg,
-  'red-mg': $red-mg,
-  'red-fg': $red-fg,
-
-  'green': $green,
-  'green-bg': $green-bg,
-  'green-mg': $green-mg,
-  'green-fg': $green-fg,
+// Standard color property options
+$color-options: (
+  'themes': 'night',
+  'pseudos': (':hover', ':focus', ':active', ':before', ':after'),
+  'responsive': false, // Responsiveness generates a lot of extra CSS and is overkill for colors...
 );
 
-$color-options: ('themes': 'night', 'pseudos': (':hover', ':focus', ':active'));
+// Default alpha channel values
+:root {
+  --color-alpha: 1;
+  --background-color-alpha: 1;
+  --border-color-alpha: 1;
+  --fill-alpha: 1;
+  --stroke-alpha: 1;
+}
 
-@include A(define, 'color', color, $color-adjectives, $color-options);
-@include A(define, 'background-color', background-color, $color-adjectives, $color-options);
+// Create alpha adjectives
+$color-alpha-adjectives: (
+  'full': 1,
+  'mid': 0.5,
+  'low': 0.35,
+  '0': 0,
+);
+@include A(define, 'color-alpha', --color-alpha, $color-alpha-adjectives, $color-options);
+@include A(define, 'background-color-alpha', --background-color-alpha, $color-alpha-adjectives, $color-options);
+@include A(define, 'border-color', --border-color-alpha, $color-alpha-adjectives, $color-options);
+@include A(define, 'fill-alpha', --fill-alpha, $color-alpha-adjectives, $color-options);
+@include A(define, 'stroke-alpha', --stroke-alpha, $color-alpha-adjectives, $color-options);
 
-@include A(define, 'border-color', border-color, $color-adjectives, $color-options);
-@include A(define, 'border-left-color', border-left-color, $color-adjectives, $color-options);
-@include A(define, 'border-top-color', border-top-color, $color-adjectives, $color-options);
-@include A(define, 'border-right-color', border-right-color, $color-adjectives, $color-options);
-@include A(define, 'border-bottom-color', border-bottom-color, $color-adjectives, $color-options);
+// Create color ajectives map
+@function color-adjectives($alpha-var) {
+  $result: (
+    'transparent': transparent,
 
-@include A(define, 'fill', fill, $color-adjectives, $color-options);
+    'black': rgba($black, var(--#{$alpha-var})),
+    'white': rgba($white, var(--#{$alpha-var})),
+
+    'light': rgba($light, var(--#{$alpha-var})),
+    'light-bg': rgba($light-bg, var(--#{$alpha-var})),
+    'light-mg': rgba($light-mg, var(--#{$alpha-var})),
+    'light-fg': rgba($light-fg, var(--#{$alpha-var})),
+
+    'dark': rgba($dark, var(--#{$alpha-var})),
+    'dark-bg': rgba($dark-bg, var(--#{$alpha-var})),
+    'dark-mg': rgba($dark-mg, var(--#{$alpha-var})),
+    'dark-fg': rgba($dark-fg, var(--#{$alpha-var})),
+
+    'orange': rgba($orange, var(--#{$alpha-var})),
+    'orange-bg': rgba($orange-bg, var(--#{$alpha-var})),
+    'orange-mg': rgba($orange-mg, var(--#{$alpha-var})),
+    'orange-fg': rgba($orange-fg, var(--#{$alpha-var})),
+
+    'red': rgba($red, var(--#{$alpha-var})),
+    'red-bg': rgba($red-bg, var(--#{$alpha-var})),
+    'red-mg': rgba($red-mg, var(--#{$alpha-var})),
+    'red-fg': rgba($red-fg, var(--#{$alpha-var})),
+
+    'green': rgba($green, var(--#{$alpha-var})),
+    'green-bg': rgba($green-bg, var(--#{$alpha-var})),
+    'green-mg': rgba($green-mg, var(--#{$alpha-var})),
+    'green-fg': rgba($green-fg, var(--#{$alpha-var})),
+  );
+
+  @return $result;
+}
+
+// Define color properties
+@include A(define, 'color', color, color-adjectives(color-alpha), $color-options);
+@include A(define, 'background-color', background-color, color-adjectives(background-color-alpha), $color-options);
+
+@include A(define, 'border-color', border-color, color-adjectives(border-color-alpha), $color-options);
+@include A(define, 'border-left-color', border-left-color, color-adjectives(border-color-alpha), $color-options);
+@include A(define, 'border-top-color', border-top-color, color-adjectives(border-color-alpha), $color-options);
+@include A(define, 'border-right-color', border-right-color, color-adjectives(border-color-alpha), $color-options);
+@include A(define, 'border-bottom-color', border-bottom-color, color-adjectives(border-color-alpha), $color-options);
+
+@include A(define, 'fill', fill, color-adjectives(fill-alpha), $color-options);
+@include A(define, 'stroke', stroke, color-adjectives(stroke-alpha), $color-options);
