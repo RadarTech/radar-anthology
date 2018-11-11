@@ -18,16 +18,16 @@ $border-width-adjectives: (
   'thick': 3px,
 );
 @include A(define, 'border-width', border-width, $border-width-adjectives);
-@include A(define, 'border-top-width', border-width, $border-width-adjectives);
-@include A(define, 'border-bottom-width', border-width, $border-width-adjectives);
-@include A(define, 'border-left-width', border-width, $border-width-adjectives);
-@include A(define, 'border-right-width', border-width, $border-width-adjectives);
+@include A(define, 'border-top-width', border-top-width, $border-width-adjectives);
+@include A(define, 'border-bottom-width', border-bottom-width, $border-width-adjectives);
+@include A(define, 'border-left-width', border-left-width, $border-width-adjectives);
+@include A(define, 'border-right-width', border-right-width, $border-width-adjectives);
 
 $border-style-adjectives: (
   'solid': solid,
 );
 @include A(define, 'border-style', border-style, $border-style-adjectives);
-@include A(define, 'border-top-style', border-style, $border-style-adjectives);
-@include A(define, 'border-bottom-style', border-style, $border-style-adjectives);
-@include A(define, 'border-left-style', border-style, $border-style-adjectives);
-@include A(define, 'border-right-style', border-style, $border-style-adjectives);
+@include A(define, 'border-top-style', border-top-style, $border-style-adjectives);
+@include A(define, 'border-bottom-style', border-bottom-style, $border-style-adjectives);
+@include A(define, 'border-left-style', border-left-style, $border-style-adjectives);
+@include A(define, 'border-right-style', border-right-style, $border-style-adjectives);
