@@ -12,7 +12,10 @@ $border-radius-adjectives: (
 @include A(define, 'border-bottom-right-radius', border-bottom-right-radius, $border-radius-adjectives);
 
 $border-width-adjectives: (
+  '0': 0px,
   'thin': 1px,
+  'medium': 2px,
+  'thick': 3px,
 );
 @include A(define, 'border-width', border-width, $border-width-adjectives);
 @include A(define, 'border-top-width', border-width, $border-width-adjectives);
