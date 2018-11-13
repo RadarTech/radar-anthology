@@ -1,10 +1,10 @@
 // --- font-size --- //
 $font-size-adjectives: (
   '1': 1rem,
-  'sm': px-to-rem(12.94px),
-  'md': px-to-rem(15.09px),
-  'lg': px-to-rem(17.25px),
-  'xl': px-to-rem(21.56px),
+  'sm': px-to-rem(14px),
+  'md': px-to-rem(16px),
+  'lg': px-to-rem(18px),
+  'xl': px-to-rem(22px),
 );
 @include A(define, 'font-size', font-size, $font-size-adjectives);
 
