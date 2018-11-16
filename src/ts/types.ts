@@ -24,13 +24,6 @@ export enum RadarBaseColorName {
   Green = 'green',
 }
 
-export enum RadarBaseColorContext {
-  Info = 'green',
-  Success = 'green',
-  Warning = 'orange',
-  Error = 'red',
-}
-
 export enum RadarColorName {
   Transparent = 'transparent',
 
@@ -106,3 +99,42 @@ export enum RadarColorClassTarget {
   Fill = 'fill',
   Stroke = 'stroke',
 }
+
+// --- Color maps ----------------------------------------------------------- //
+
+export const radarColorContext = {
+  info: RadarBaseColorName.Green,
+  success: RadarBaseColorName.Green,
+  warning: RadarBaseColorName.Orange,
+  error: RadarBaseColorName.Red,
+};
+
+export const radarColorHex = {
+  [RadarColorName.Black]: '#000000',
+  [RadarColorName.White]: '#ffffff',
+
+  [RadarColorName.LightBg]: '#a5a5a5',
+  [RadarColorName.LightMg]: '#dadada',
+  [RadarColorName.Light]: '#f0f0f0',
+  [RadarColorName.LightFg]: '#ffffff',
+
+  [RadarColorName.DarkBg]: '#000000',
+  [RadarColorName.DarkMg]: '#282828',
+  [RadarColorName.Dark]: '#303030',
+  [RadarColorName.DarkFg]: '#484848',
+
+  [RadarColorName.OrangeBg]: '#dd5e17',
+  [RadarColorName.OrangeMg]: '#f58912',
+  [RadarColorName.Orange]: '#ff9810',
+  [RadarColorName.OrangeFg]: '#ffac15',
+
+  [RadarColorName.RedBg]: '#bf1717',
+  [RadarColorName.RedMg]: '#df2525',
+  [RadarColorName.Red]: '#ff3333',
+  [RadarColorName.RedFg]: '#ff525e',
+
+  [RadarColorName.GreenBg]: '#0d8c61',
+  [RadarColorName.GreenMg]: '#26d986',
+  [RadarColorName.Green]: '#33ff99',
+  [RadarColorName.GreenFg]: '#a6ffbf',
+};

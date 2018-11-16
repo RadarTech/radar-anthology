@@ -121,7 +121,7 @@ function genericColorFactory<T extends RadarColorClassTarget>(
   };
 }
 
-// --- Specified color factories -------------------------------------------- //
+// --- Color factories by class target -------------------------------------- //
 
 export const createColor = genericColorFactory(RadarColorClassTarget.Color);
 
