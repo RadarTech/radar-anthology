@@ -14,7 +14,7 @@ export enum RadarBreakpointPxValue {
   FullHD = '1620px',
 }
 
-// --- Colors --------------------------------------------------------------- //
+// --- Color enums ---------------------------------------------------------- //
 
 export enum RadarBaseColorName {
   Light = 'light',
@@ -22,6 +22,13 @@ export enum RadarBaseColorName {
   Orange = 'orange',
   Red = 'red',
   Green = 'green',
+}
+
+export enum RadarBaseColorContext {
+  Info = 'green',
+  Success = 'green',
+  Warning = 'orange',
+  Error = 'red',
 }
 
 export enum RadarColorName {

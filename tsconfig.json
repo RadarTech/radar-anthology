@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist",
+    "target": "es5",
+    "rootDir": "./src/ts",
+    "lib": ["dom", "es2018"],
+  },
+}

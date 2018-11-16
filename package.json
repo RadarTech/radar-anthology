@@ -2,7 +2,6 @@
   "name": "@radarrelay/radar-anthology",
   "version": "0.4.5",
   "description": "Radar's internal configuration using Anthology.scss",
-  "main": "main.scss",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RadarRelay/radar-anthology.git"
@@ -12,7 +11,35 @@
     "url": "https://github.com/RadarRelay/radar-anthology/issues"
   },
   "homepage": "https://github.com/RadarRelay/radar-anthology#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && tsc",
+    "lint": "tslint --fix ./src/ts/**/*.ts"
+  },
   "peerDependencies": {
     "anthology.scss": "0.3.0"
+  },
+  "devDependencies": {
+    "@radarrelay/tslint-config": "^5.0.0",
+    "anthology.scss": "0.3.0",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.15.2",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix",
+      "git add"
+    ]
   }
 }
