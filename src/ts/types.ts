@@ -92,3 +92,17 @@ export enum RadarColorHexValue {
   Green = '#33ff99',
   GreenFg = '#a6ffbf',
 }
+
+export enum RadarColorClassTarget {
+  Color = 'color',
+  BackgroundColor = 'background-color',
+
+  BorderColor = 'border-color',
+  BorderTopColor = 'border-top-color',
+  BorderRightColor = 'border-right-color',
+  BorderBottomColor = 'border-bottom-color',
+  BorderLeftColor = 'border-left-color',
+
+  Fill = 'fill',
+  Stroke = 'stroke',
+}
