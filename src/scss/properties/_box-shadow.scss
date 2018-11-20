@@ -1,0 +1,7 @@
+$box-shadow-adjectives: (
+  'none': none,
+  'elevation-low': 0 0 4px rgba(#000, 0.5),
+  'elevation-medium': 0 0 8px rgba(#000, 0.5),
+  'elevation-high': 0 0 12px rgba(#000, 0.5),
+);
+@include A(define, 'box-shadow', box-shadow, $box-shadow-adjectives);
