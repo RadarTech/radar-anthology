@@ -16,7 +16,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "yarn clean && tsc",
-    "lint": "tslint --fix ./src/ts/**/*.ts"
+    "lint": "tslint --fix ./src/ts/**/*.ts",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "anthology.scss": "0.3.0"
