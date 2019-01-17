@@ -1,6 +1,6 @@
 {
   "name": "@radarrelay/radar-anthology",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Radar's internal configuration using Anthology.scss",
   "repository": {
     "type": "git",
@@ -20,13 +20,14 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "anthology.scss": "0.3.0"
+    "anthology.scss": "0.6.1"
   },
   "devDependencies": {
     "@radarrelay/tslint-config": "^5.0.0",
-    "anthology.scss": "0.3.0",
+    "anthology.scss": "0.6.1",
     "husky": "^1.1.4",
     "lint-staged": "^8.0.4",
+    "node-sass": "^4.11.0",
     "prettier": "^1.15.2",
     "rimraf": "^2.6.2",
     "tslint": "^5.11.0",
