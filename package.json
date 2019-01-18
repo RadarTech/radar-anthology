@@ -20,11 +20,11 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "anthology.scss": "0.6.1"
+    "anthology.scss": "0.7.0"
   },
   "devDependencies": {
     "@radarrelay/tslint-config": "^5.0.0",
-    "anthology.scss": "0.6.1",
+    "anthology.scss": "0.7.0",
     "husky": "^1.1.4",
     "lint-staged": "^8.0.4",
     "node-sass": "^4.11.0",

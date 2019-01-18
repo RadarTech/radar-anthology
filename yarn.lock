@@ -96,10 +96,10 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-anthology.scss@0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/anthology.scss/-/anthology.scss-0.6.1.tgz#a39a80c515cb0929211e160b91b505892e617831"
-  integrity sha512-46XdpaDOu77lZmfbYHuluFWF3t8Ex/EDpA87km5LsFPk/i8z/cznTrPugn1/MHBFu6xaZMQhM6ZEK0t37FiBNQ==
+anthology.scss@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/anthology.scss/-/anthology.scss-0.7.0.tgz#6640b11daac3f5a9393130be8d302e1ee5274bee"
+  integrity sha512-OdzWJn4ZZYe5UrcMhxLJ0Cnjz11GGjBh46fmw1Lds+UYdFyn7n8a9QlsibybYPK+5FvPE8otoZgjmuGKj4QWhA==
   dependencies:
     chalk "~2.4.1"
 
