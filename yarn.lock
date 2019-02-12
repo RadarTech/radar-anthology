@@ -32,10 +32,10 @@
     reflect-metadata "^0.1.12"
     tslib "^1.8.1"
 
-"@radarrelay/tslint-config@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@radarrelay/tslint-config/-/tslint-config-5.0.0.tgz#c1bbb7daa780a609293c6d8e32b38d9af0459f72"
-  integrity sha512-u9P/oxbPgMQrAIrV54F5K1uLQ+tAMqoy2+Mbq9qbrLhjo4bMOliRA5FDuWH1NAcnLeoem8X4fKhJzM6++vV6AQ==
+"@radar/tslint-config@^5.0.0":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@radar/tslint-config/-/tslint-config-5.0.1.tgz#a4648b11c665cd233632277db099cf1b6fa75f4b"
+  integrity sha512-B45+HVLxgap9s83KAmY1IosRqqVVkmIHYnCpUtXSfx0mUQtIsV308jOQdInbUKDUG6eqrQQB0PP9s+QuLOfrrA==
   dependencies:
     "@0xproject/tslint-config" "^1.0.7"
     tslint-config-airbnb "^5.11.0"
@@ -96,10 +96,10 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-anthology.scss@0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/anthology.scss/-/anthology.scss-0.7.2.tgz#1e121c1b9a81669f7951b019d4e25b912f37631d"
-  integrity sha512-IFENsM1jxbqIXsweexcinVzrdYcMDEjyCjcvzU+ENgm1l04uGUIMkoKvr83buWRfgczXkOyXKOlgtvyWKSJJdA==
+anthology.scss@0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/anthology.scss/-/anthology.scss-0.7.4.tgz#802c470cf307615a408672a4a62937f28902f78c"
+  integrity sha512-WprLxAg39hz/dqn1yDIFM/WCcIln+Xkcow5CYo8oKC7fEZcKxQSRypL/WVWaEiSieRrhSCLu7ix/2sP+wG0q7Q==
   dependencies:
     chalk "~2.4.1"
 
