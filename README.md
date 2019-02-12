@@ -1,6 +1,6 @@
 # 🎨 radar-anthology
 
-> Radar's internal configuration for Anthology.
+> Radar's internal configuration for Anthology.scss
 
 <p align="center">
   <a href="https://www.anthology.style">📚 Anthology documentation</a>
